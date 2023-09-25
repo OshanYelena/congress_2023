@@ -1,0 +1,1166 @@
+<!DOCTYPE html>
+<html lang="zxx">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>SYWC'23</title>
+    <link
+      rel="shortcut icon"
+      type="image/png/svg"
+      href="assets/img/logo-4.png"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="assets/css/vendor.css" />
+    <link rel="stylesheet" href="assets/css/animation.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="assets/css/responsive.css" />
+    <link rel="stylesheet" href="assets/css/count.css" />
+    <style>
+      
+    </style>
+  </head>
+  <body>
+    <!-- preloader area start -->
+    <div class="preloader" id="preloader">
+      <div class="preloader-inner">
+        <div class="spinner">
+          <div class="dot1"></div>
+
+          <div class="dot2"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="body-overlay" id="body-overlay"></div>
+    <!-- preloader area End -->
+
+    <!-- navbar start -->
+    <div class="navbar-area">
+      <nav class="navbar navbar-expand-lg">
+        <div class="container nav-container">
+          <div class="responsive-mobile-menu">
+            <button
+              class="menu toggle-btn d-block d-lg-none"
+              data-target="#eventa7_main_menu"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="icon-left"></span>
+              <span class="icon-right"></span>
+            </button>
+          </div>
+          <div class="logo" style="width: 250px; height: 58px">
+            <a class="main-logo" href="index.html"
+              ><img src="assets/img/logo.png" alt="img"
+            /></a>
+            <a class="sticky-logo" href="index.html"
+              ><img src="assets/img/logo-2.png" alt="img"
+            /></a>
+          </div>
+          <!-- <div class="nav-right-part nav-right-part-mobile">
+            <a class="btn btn-red" href="Register Now.html">Register Now</a>
+          </div> -->
+          <div class="collapse navbar-collapse" id="eventa7_main_menu">
+            <ul class="navbar-nav menu-open">
+              <li>
+                <a href="index.html">Home</a>
+              </li>
+              <li><a href="about.html">About Us</a></li>
+              <li>
+                <a href="terms-and-conditions.html">Terms & Conditions</a>
+              </li>
+              <li class="menu-item-has-children current-menu-item">
+                <a href="#">Our Team</a>
+                <ul class="sub-menu">
+                  <li><a href="spsTeam.html">SL SPS Excom</a></li>
+                  <li><a href="slsacTeam.html">SLYWC'23 Excom</a></li>
+
+                  <!-- <li><a href="speaker.html">Speaker</a></li> -->
+                  <!-- <li><a href="partner.html">Partner</a></li>
+                  <li><a href="schedule.html">Schedule</a></li>
+
+                  <li><a href="become-sponsor.html">Become Sponsor</a></li> -->
+                </ul>
+              </li>
+
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+          <!-- <div class="nav-right-part nav-right-part-desktop">
+            <a class="btn btn-red" href="/">Register Now</a>
+          </div> -->
+        </div>
+      </nav>
+    </div>
+    <!-- <audio controls autoplay>
+      <source src="hors" type="audio/ogg" />
+      <source src="/assets/videos/innovation-3794.mp3" type="audio/mpeg" />
+    </audio> -->
+    <!-- navbar end -->
+    <!-- style="
+    background-image: url('assets/img/about/Group\ Photo\ copy.png');background-position: start;" -->
+    <!-- banner start -->
+    <div class="bg-abstracted">
+      <div class="banner-area style-two">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-sm-6 align-self-center">
+              <div class="banner-inner">
+                <h2>SPS SL MDS | SLSWC'23</h2>
+                <p>
+                  IEEE SPS SL MDS 2023 - <br />
+                  For a Strong Signal Processing <br />
+                  Community in collaboration with IEEE SLSYWC
+                </p>
+                <div class="btn-wrap">
+                  <a class="btn btn-red" href="#"
+                    ><img src="assets/img/icon/1.png" alt="img" />Register
+                    Now</a
+                  >
+                </div>
+              </div>
+            </div>
+            <!-- <div class="col-lg-6 col-md-6 col-sm-6 img-res">
+              <img src="/assets/img/150ppi/Asset 223@150x.png" alt="" />
+            </div> -->
+          </div>
+        </div>
+      </div>
+      <div
+        class="col-lg-12 col-md-6 offset-lg-1 mt-lg-0 mt-5 container-count justify-content-center"
+      >
+        <div id="countdown" class="date-time-inner">
+          <h2>EVENT WILL COMMENCE IN</h2>
+          <ul class="text-md-right">
+            <li>
+              <div class="date-time-wrap text-center">
+                <span id="days" class="number"></span>
+                <span class="text">Days</span>
+              </div>
+            </li>
+            <li>
+              <div class="date-time-wrap text-center">
+                <span id="hours" class="number"></span>
+                <span class="text">Hours</span>
+              </div>
+            </li>
+            <li>
+              <div class="date-time-wrap text-center">
+                <span id="minutes" class="number"></span>
+                <span class="text">Minute</span>
+              </div>
+            </li>
+            <li>
+              <div class="date-time-wrap text-center">
+                <span id="seconds" class="number"></span>
+                <span class="text">Minute</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div>
+        <!-- banner end -->
+
+        <!-- About area Start -->
+        <div class="about-area pd-top-10">
+          <div class="container" style="margin-top: 100px">
+            <div class="row">
+              <div class="col-lg-6 col-md-8">
+                <div class="thumb">
+                  <!-- <a href="assets/videos/animation_llt43q5r.mp4"></a> -->
+                  <img src="assets/img/_DSC9767 Medium.png" alt="img" />
+                </div>
+              </div>
+              <div class="col-lg-6 mt-lg-0 mt-4 align-self-center">
+                <div class="about-inner">
+                  <div class="section-title">
+                    <h2>Welcome to the 12th Annual IEEE SL SYW Congress</h2>
+                    <p>
+                      Join us on November 3rd, 4th, and 5th for the most
+                      anticipated event of the IEEE Sri Lanka Section. This
+                      year's theme, 'Dreams Conquer Boundaries,' encapsulates
+                      our commitment to showcasing diverse opportunities,
+                      fostering innovation, and addressing global challenges.
+                      Explore four dynamic phases - 'Dream Big, Embrace Tech,'
+                      'Diverse Voices, Collective Triumph,' 'Claim Your
+                      Boundless Future,' and 'New Challenge? Climate Change?' -
+                      as we empower you to dream big, embrace technology, and
+                      conquer boundaries.
+                    </p>
+                  </div>
+                </div>
+
+                <!-- <a
+                href="https://www.youtube.com/embed/Hg2gQIOa5Pk?si=YEmXK8p-T7ttTV8z"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media;"
+                class="video-btn video-play-btn mfp-iframe"
+                tabindex="0"
+                ><i class="fa fa-play"></i> watch video</a
+              > -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- About area end -->
+    </div>
+    <!-- Ticket area Start -->
+    <div class="ticket-area pd-top-140">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8">
+            <div class="section-title text-center">
+              <h2>Collaborators</h2>
+              <!-- <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt consectetur ut et dolore magna aliqua.
+          </p> -->
+            </div>
+          </div>
+        </div>
+        <div class="image-container">
+          <div class="col-lg-4 col-md-6">
+            <p class="text-center">
+              Introducing our collaborator who make this event a possibility
+            </p>
+            <div class="d-flex justify-content-center">
+              <div class="icon res-img">
+                <img
+                  style="max-width: 100%"
+                  src="assets/img/sponsor/SPS_Logo_Color_RGB_TM.png"
+                  alt="img"
+                />
+              </div>
+              <div class="list" style="list-style: none"></div>
+            </div>
+          </div>
+        </div>
+        <!-- <div class="particle-network-animation"></div> -->
+
+        <!-- <canvas id="confetti"></canvas> -->
+        <div class="row justify-content-center mt-5">
+          <div
+            class="col-lg-4 col-md-12 d-flex justify-content-center align-self-center mt-5"
+          >
+            <div class="text-center">
+              <div class="icon">
+                <a href="https://yp.ieee.org/" target="_blank">
+                  <img
+                    src="assets/img/IEEEYoungProfessionalsLogoTM_RGB_Horiz.png"
+                    alt="img"
+                    height="52px"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-12 d-flex justify-content-center align-self-center mt-5"
+          >
+            <div class="text-center">
+              <div class="icon">
+                <a href="https://vtsociety.org/" target="_blank">
+                  <img
+                    src="assets/img/VTS-Logo_nobackground.png"
+                    height="52px"
+                    alt="img"
+                /></a>
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-4 col-md-12 d-flex justify-content-center align-self-center mt-5"
+          >
+            <div class="text-center">
+              <div class="icon">
+                <a href="https://ieeeoes.org/" target="_blank">
+                  <img
+                    src="assets/img/organizedByLogos/OES_logo_long.png"
+                    height="52px"
+                    alt="img"
+                /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-5">
+          <div class="col-xl-7 col-lg-8">
+            <div class="section-title text-center">
+              <h2>Organized by</h2>
+              <!-- <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt consectetur ut et dolore magna aliqua.
+          </p> -->
+            </div>
+          </div>
+        </div>
+        <div class="row justify-content-center mt-1">
+          <div
+            class="col-lg-3 col-md-6 d-flex justify-content-center align-self-center mt-5"
+          >
+            <div class="text-center">
+              <div class="icon">
+                <img src="assets/img/2023.jpeg" height="52px" alt="img" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 d-flex justify-content-center align-self-center mt-5"
+          >
+            <div class="text-center">
+              <div class="icon">
+                <img
+                  src="assets/img/IEEE_Section.png"
+                  height="100px"
+                  alt="img"
+                />
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 d-flex justify-content-center align-self-center mt-5"
+          >
+            <div class="text-center">
+              <div class="icon">
+                <img src="assets/img/Asset 2@150x.png" alt="img" />
+              </div>
+            </div>
+          </div>
+          <div
+            class="col-lg-3 col-md-6 d-flex justify-content-center align-self-center mt-5"
+          >
+            <div class="text-center">
+              <div class="icon">
+                <img
+                  src="assets/img/Asset 1@150x.png"
+                  height="100px"
+                  alt="img"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Ticket area End -->
+
+    <!-- Sponsor area Start -->
+    <div class="sponsor-area pd-top-110">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8">
+            <div class="section-title text-center">
+              <h2>CATCH A GLIMPSE FROM THE PAST</h2>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="sponsor-slider owl-carousel owl-theme">
+            <div class="item" style="width: 100px">
+              <div class="thumb text-center">
+                <img src="assets/img/pastLogo/Congress logo-01.png" alt="img" />
+                <p>2015</p>
+                <a href=""></a>
+              </div>
+            </div>
+            <div class="item" style="width: 100px">
+              <div class="thumb text-center">
+                <img src="assets/img/pastLogo/Congress logo-03.png" alt="img" />
+                <p>2016</p>
+              </div>
+            </div>
+            <div class="item" style="width: 100px">
+              <div class="thumb text-center">
+                <img src="assets/img/pastLogo/Congress logo-02.png" alt="img" />
+                <p>2017</p>
+              </div>
+            </div>
+            <div class="item" style="width: 100px">
+              <div class="thumb text-center">
+                <a
+                  href="https://sywc.ieee.lk/archives/2018/index.php"
+                  target="_blank"
+                >
+                  <img src="assets/img/pastLogo/Congress logo-04.png" alt="img"
+                /></a>
+                <p>2018</p>
+              </div>
+            </div>
+            <div class="item" style="width: 100px">
+              <div class="thumb text-center">
+                <a
+                  href="https://sywc.ieee.lk/archives/2019/index.php"
+                  target="_blank"
+                >
+                  <img src="assets/img/pastLogo/Congress logo-05.png" alt="img"
+                /></a>
+                <p>2019</p>
+              </div>
+            </div>
+            <div class="item" style="width: 100px">
+              <div class="thumb text-center">
+                <a
+                  href="https://sywc.ieee.lk/archives/2020/index.php"
+                  target="_blank"
+                >
+                  <img src="assets/img/pastLogo/Congress logo-06.png" alt="img"
+                /></a>
+                <p>2020</p>
+              </div>
+            </div>
+            <div class="item" style="width: 100px">
+              <div class="thumb text-center">
+                <a href="https://sywc.ieee.lk/index-.php" target="_blank">
+                  <img src="assets/img/pastLogo/Congress logo-07.png" alt="img"
+                /></a>
+                <p>2021</p>
+              </div>
+            </div>
+            <div class="item" style="width: 100px">
+              <div class="thumb text-center">
+                <a href="https://sywc.2022.ieee.lk" target="_blank">
+                  <img
+                    src="assets/img/pastLogo/Congress logo-08.png"
+                    alt="img"
+                  />
+                  <p>2022</p>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Sponsor area End -->
+
+    <!-- Schedules area Start -->
+    <div class="schedules-area pd-top-110">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-xl-7 col-lg-8">
+            <div class="section-title text-center">
+              <h2>Event Schedule</h2>
+              <p>
+                Embark on a transformative three-day journey packed with
+                insightful sessions, engaging workshops, and networking
+                opportunities that promise to inspire, educate, and connect.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="evt-tab-inner text-center">
+          <ul class="nav nav-tabs" id="ex1" role="tablist">
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="ex1-tab-1"
+                data-toggle="pill"
+                href="#ex1-tabs-1"
+                role="tab"
+                aria-selected="true"
+                ><span>Day 1</span>3rd November 2023</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex1-tab-2"
+                data-toggle="pill"
+                href="#ex1-tabs-2"
+                role="tab"
+                aria-selected="false"
+                ><span>Day 2</span>4th November 2023</a
+              >
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="ex1-tab-3"
+                data-toggle="pill"
+                href="#ex1-tabs-3"
+                role="tab"
+                aria-selected="false"
+                ><span>Day 3</span>5th November 2023</a
+              >
+            </li>
+          </ul>
+        </div>
+        <div class="tab-content" id="ex1-content">
+          <div
+            class="tab-pane fade show active"
+            id="ex1-tabs-1"
+            role="tabpanel"
+          >
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    12:30pm
+                  </div>
+                  <h5>Delegate Registration</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    2:00pm
+                  </div>
+                  <h5>Opening Ceremony</h5>
+
+                  <!-- <div class="media">
+                    <div class="media-left">
+                      <img src="assets/img/speaker/2.png" alt="img" />
+                    </div>
+                    <div class="media-body align-self-center">
+                      <h6>Dr. Ariful Islam Abid</h6>
+                      <p>Ceo of AIA software agency, USA.</p>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    2:15pm
+                  </div>
+                  <h5>Welcome Speech</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    2:30pm
+                  </div>
+                  <h5>Keynote Speech</h5>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    3:00pm
+                  </div>
+                  <h5>Opening Plenary</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    3:30pm
+                  </div>
+                  <h5>Partnership Space / Evening Tea</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    3:40pm
+                  </div>
+                  <h5>Personal Branding Session</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    4:10pm
+                  </div>
+                  <h5>IEEE Essence</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    4:30pm
+                  </div>
+                  <h5>Indoor Networking Session</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    5:30pm
+                  </div>
+                  <h5>Evening Plenary</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner lunch-schedules text-center">
+                  <div class="lunch-schedules-inner align-self-center">
+                    <div class="icons">
+                      <img src="assets/img/icon/6.png" alt="img" />
+                    </div>
+                    <h5>Dinner</h5>
+                    <div class="date">
+                      <i class="fa fa-clock-o"></i>
+                      7:00pm
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    8:30pm
+                  </div>
+                  <h5>Cultural Night(Live Lounge)</h5>
+                </div>
+              </div>
+
+              <!-- <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner lunch-schedules text-center">
+                  <div class="lunch-schedules-inner align-self-center">
+                    <div class="icons">
+                      <img src="assets/img/icon/6.png" alt="img" />
+                    </div>
+                    <h5>Opening Plenary</h5>
+                    <div class="date">
+                      <i class="fa fa-clock-o"></i>
+                      3:00pm
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    5:00pm -6:30pm
+                  </div>
+                  <h5>Improving the quality of the management.</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua
+                  </p>
+                  <div class="media">
+                    <div class="media-left">
+                      <img src="assets/img/speaker/4.png" alt="img" />
+                    </div>
+                    <div class="media-body align-self-center">
+                      <h6>Dr. Ariful Islam Abid</h6>
+                      <p>Ceo of AIA software agency, USA.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    5:00pm -6:30pm
+                  </div>
+                  <h5>Improving the quality of the management.</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua
+                  </p>
+                  <div class="media">
+                    <div class="media-left">
+                      <img src="assets/img/speaker/5.png" alt="img" />
+                    </div>
+                    <div class="media-body align-self-center">
+                      <h6>Dr. Ariful Islam Abid</h6>
+                      <p>Ceo of AIA software agency, USA.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    5:00pm -6:30pm
+                  </div>
+                  <h5>Improving the quality of the management.</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua
+                  </p>
+                  <div class="media">
+                    <div class="media-left">
+                      <img src="assets/img/speaker/6.png" alt="img" />
+                    </div>
+                    <div class="media-body align-self-center">
+                      <h6>Dr. Ariful Islam Abid</h6>
+                      <p>Ceo of AIA software agency, USA.</p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+          <div class="tab-pane fade" id="ex1-tabs-2" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner lunch-schedules text-center">
+                  <div class="lunch-schedules-inner align-self-center">
+                    <div class="icons">
+                      <img src="assets/img/icon/6.png" alt="img" />
+                    </div>
+                    <h5>Breakfast</h5>
+                    <div class="date">
+                      <i class="fa fa-clock-o"></i>
+                      7:00am
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    8:30am
+                  </div>
+                  <h5>Arrival of Guests and Welcome</h5>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    8:45am
+                  </div>
+                  <h5>Keynote Speech</h5>
+                  <p>
+                    From Theory to Application: Unleashing the Potential of
+                    Graph Signal Processing and Deep Learning in Revolutionising
+                    Audio and Speech Processing
+                  </p>
+                  <!-- <div class="media">
+                    <div class="media-left">
+                      <img src="assets/img/speaker/2.png" alt="img" />
+                    </div>
+                    <div class="media-body align-self-center">
+                      <h6>Dr. Ariful Islam Abid</h6>
+                      <p>Ceo of AIA software agency, USA.</p>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    9:30am
+                  </div>
+                  <h5>Talk session on ‘Recent trends in Signal Processing’</h5>
+                  <!-- <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua
+                  </p>
+                  <div class="media">
+                    <div class="media-left">
+                      <img src="assets/img/speaker/4.png" alt="img" />
+                    </div>
+                    <div class="media-body align-self-center">
+                      <h6>Dr. Ariful Islam Abid</h6>
+                      <p>Ceo of AIA software agency, USA.</p>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    10:00am
+                  </div>
+                  <h5>IEEE Signal Processing Workshop - The Signal Scope.</h5>
+                  <!-- <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua
+                  </p>
+                  <div class="media">
+                    <div class="media-left">
+                      <img src="assets/img/speaker/5.png" alt="img" />
+                    </div>
+                    <div class="media-body align-self-center">
+                      <h6>Dr. Ariful Islam Abid</h6>
+                      <p>Ceo of AIA software agency, USA.</p>
+                    </div>
+                  </div> -->
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner lunch-schedules text-center">
+                  <div class="lunch-schedules-inner align-self-center">
+                    <div class="icons">
+                      <img src="assets/img/icon/6.png" alt="img" />
+                    </div>
+                    <h5>Lunch</h5>
+                    <div class="date">
+                      <i class="fa fa-clock-o"></i>
+                      01:00pm
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    02:30pm
+                  </div>
+                  <h5>Lead with SPS (Session on SPS Member Benefits)</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    03:00pm
+                  </div>
+                  <h5>Panel Discussion</h5>
+                  <p>
+                    Research Areas for specialisation in Signal Processing,
+                    Communications and Networks
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    04:00pm
+                  </div>
+                  <h5>Outbound Training Session / Evening Tea</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    7:00pm
+                  </div>
+                  <h5>Section Awards Night with guests of IEEE SLSYWC’23</h5>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner lunch-schedules text-center">
+                  <div class="lunch-schedules-inner align-self-center">
+                    <div class="icons">
+                      <img src="assets/img/icon/6.png" alt="img" />
+                    </div>
+                    <h5>Dinner</h5>
+                    <div class="date">
+                      <i class="fa fa-clock-o"></i>
+                      8:30pm
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    9:30pm
+                  </div>
+                  <h5>After-party</h5>
+                </div>
+              </div>
+
+              <!-- <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    5:00pm -6:30pm
+                  </div>
+                  <h5>Improving the quality of the management.</h5>
+                  <p>
+                    Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed
+                    diam nonumy eirmod tempor invidunt ut labore et dolore magna
+                    aliquyam erat, sed diam voluptua
+                  </p>
+                  <div class="media">
+                    <div class="media-left">
+                      <img src="assets/img/speaker/6.png" alt="img" />
+                    </div>
+                    <div class="media-body align-self-center">
+                      <h6>Dr. Ariful Islam Abid</h6>
+                      <p>Ceo of AIA software agency, USA.</p>
+                    </div>
+                  </div>
+                </div>
+              </div> -->
+            </div>
+          </div>
+
+          <div class="tab-pane fade" id="ex1-tabs-3" role="tabpanel">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner lunch-schedules text-center">
+                  <div class="lunch-schedules-inner align-self-center">
+                    <div class="icons">
+                      <img src="assets/img/icon/6.png" alt="img" />
+                    </div>
+                    <h5>Breakfast</h5>
+                    <div class="date">
+                      <i class="fa fa-clock-o"></i>
+                      7:00am
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    8:30am
+                  </div>
+                  <h5>Morning Plenary</h5>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    8:45am
+                  </div>
+                  <h5>Keynote Speech</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    9:30am
+                  </div>
+                  <h5>Trailblazers of STEM</h5>
+                  <p>Women Paving the Path for Inclusion and Excellence</p>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    10:00am
+                  </div>
+                  <h5>Networking Session</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    10:35am
+                  </div>
+                  <h5>Chapter Stalls</h5>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    11:30am
+                  </div>
+                  <h5>Final Plenary</h5>
+                </div>
+              </div>
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner">
+                  <div class="date">
+                    <i class="fa fa-clock-o"></i>
+                    1:00pm
+                  </div>
+                  <h5>Closing Remarks</h5>
+                </div>
+              </div>
+
+              <div class="col-lg-4 col-md-6">
+                <div class="single-schedules-inner lunch-schedules text-center">
+                  <div class="lunch-schedules-inner align-self-center">
+                    <div class="icons">
+                      <img src="assets/img/icon/6.png" alt="img" />
+                    </div>
+                    <h5>Lunch</h5>
+                    <div class="date">
+                      <i class="fa fa-clock-o"></i>
+                      1:30pm
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Schedules area Start -->
+
+    <!-- Speaker area Start -->
+
+    <!-- Speaker area End -->
+
+    <!-- complimentary area Start -->
+    <div class="complimentary-area bg-red">
+      <div class="container">
+        <div class="complimentary-area-inner">
+          <div class="row custom-gutters-20">
+            <div class="col-lg-3 col-sm-6">
+              <div class="thumb">
+                <img src="assets/img/sliit-asd.jpg" alt="img" />
+              </div>
+            </div>
+            <div class="col-lg-3 col-sm-6">
+              <div class="thumb">
+                <img
+                  src="assets/img/s.png"
+                  style="background-color: white"
+                  alt="img"
+                />
+              </div>
+              <div class="thumb">
+                <img
+                  src="assets/img/SLIIT-August-Convocation-2016-05.jpg"
+                  alt="img"
+                />
+              </div>
+            </div>
+            <div class="col-lg-6 align-self-center">
+              <div class="section-title style-white pl-xl-5">
+                <h2>Our Complimentary Gifts For You Event Souvenir</h2>
+                <ul class="evt-list style-white">
+                  <li>Exclusive T-Shirt</li>
+                  <li>Leather Bag</li>
+                  <li>Mug</li>
+                  <li>Gift Hamper</li>
+                </ul>
+                <a class="btn btn-white" href="#"
+                  ><img src="assets/img/icon/2.png" alt="img" />Register Now</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- complimentary area End -->
+
+    <div class="location-area main-map-location pd-top-120 pd-bottom-140">
+      <div class="container">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.621846685744!2d80.71974357447854!3d7.28379489272354!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3ae3610188e9edd9%3A0x581a6cfa7ed05bdb!2sSri%20Lanka%20Institute%20of%20Information%20Technology!5e0!3m2!1sen!2slk!4v1695645764377!5m2!1sen!2slk"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </div>
+
+    <!-- footer area start -->
+    <footer class="footer-area bg-red">
+      <div class="container">
+        <div class="footer-top">
+          <div class="row">
+            <div class="col-lg-3 col-md-6">
+              <div class="widget widget_about">
+                <div class="thumb">
+                  <img src="assets/img/logo-2.png" alt="img" />
+                </div>
+                <div class="details">
+                  <p>
+                    Dream big, embrace tech, and conquer boundaries with us at
+                    the IEEE SL SYW Congress 2023. Join our diverse community of
+                    innovators from the 3rd to 5th November.
+                  </p>
+                  <ul class="social-area">
+                    <li>
+                      <a href="#"><i class="fa fa-facebook"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-twitter"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-instagram"></i></a>
+                    </li>
+                    <li>
+                      <a href="#"><i class="fa fa-linkedin"></i></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+              <h4 class="widget-title">Useful Links</h4>
+              <div class="widget widget_nav_menu">
+                <ul>
+                  <li>
+                    <a href="terms-and-conditions.html">Terms & Conditions</a>
+                  </li>
+                  <li><a href="/about.html">About Us</a></li>
+                  <li><a href="/contact.html">Contact Us</a></li>
+                  <li></li>
+                  <!-- <li><a href="/become-sponsor.html">Become Sponsor</a></li> -->
+                  <!-- <li><a href="#">Privacy</a></li>
+                  <li><a href="#">Terms of Use.</a></li>
+                  <li><a href="#">Site Map </a></li> -->
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-8">
+              <h4 class="widget-title"></h4>
+              <div class="widget widget_instagram pr-3">
+                <div class="row custom-gutters-14">
+                  <div class="col-md-4 col-4"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footer-bottom text-center">
+          <div class="container">
+            <p>
+              © 2023 IEEE SLSYWC 2023. All rights reserved. Designed by MA
+              Subcommittee | SLSAC
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- footer area end -->
+
+    <!-- back to top area start -->
+    <div class="back-to-top">
+      <span class="back-top"><i class="fa fa-angle-up"></i></span>
+    </div>
+    <!-- back to top area end -->
+
+    <!-- all plugins here -->
+    <script src="assets/js/vendor.js"></script>
+    <script src="assets/js/count.js"></script>
+    <script src="assets/js/nural.js"></script>
+
+    <!-- <script src="assets/js/animation.js"></script> -->
+    <!-- main js  -->
+    <script src="assets/js/main.js"></script>
+  </body>
+</html>

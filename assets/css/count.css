@@ -1,0 +1,47 @@
+.container-count {
+  color: #333;
+  margin: 0 auto;
+  text-align: center;
+}
+#headline h1 {
+  font-weight: normal;
+  letter-spacing: 0.125rem;
+  text-transform: uppercase;
+}
+
+#headline li {
+  display: inline-block;
+  font-size: 1.5em;
+  list-style-type: none;
+  padding: 1em;
+  text-transform: uppercase;
+}
+
+#headline li span {
+  display: block;
+  font-size: 4.5rem;
+}
+
+#headline .emoji {
+  display: none;
+  padding: 1rem;
+}
+
+#headline .emoji span {
+  font-size: 4rem;
+  padding: 0 0.5rem;
+}
+
+@media all and (max-width: 768px) {
+  #headline h1 {
+    font-size: calc(1.5rem * var(--smaller));
+  }
+
+  #headline li {
+    font-size: calc(1.125rem * var(--smaller));
+  }
+
+  #headline li span {
+    font-size: calc(3.375rem * var(--smaller));
+  }
+}
