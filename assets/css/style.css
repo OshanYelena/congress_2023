@@ -1962,9 +1962,9 @@ ul {
 .date-time-inner ul {
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: center;
-  text-align: center;
+  display: flex !important;
+  justify-content: center !important; 
+  text-align: center !important;
   margin-right: 12px;
   margin-left: -12px;
 }
@@ -1986,9 +1986,6 @@ ul {
   height: 100%;
   width: 100%;
   left: 0;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  background-color: #004745;
 }
 .date-time-inner ul li .number {
   font-size: 90px;
@@ -3200,11 +3197,11 @@ ul {
 }
 
 .image-container {
-  text-align: center; /* Center-align text */
+  text-align: center;
   display: flex;
-  flex-direction: column; /* Stack items vertically */
-  align-items: center; /* Center-align items horizontally */
-  justify-content: center; /* Center-align items vertically */
+  flex-direction: column; 
+  align-items: center; 
+  justify-content: center;
 }
 
 
