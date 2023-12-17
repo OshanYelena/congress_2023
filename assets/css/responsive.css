@@ -359,7 +359,7 @@
     text-align: center;
   }
   .img-res {
-    display: none;
+    display: none !important;
   }
   .res-img {
 	width: 200px;
@@ -484,6 +484,9 @@
   }
   .post-check .blog-checker a span br {
     display: none;
+  }
+  .img-res {
+    display: none !important;
   }
   .nav-right-part .btn-red {
     padding: 0 18px;

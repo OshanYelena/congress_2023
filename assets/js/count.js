@@ -1,43 +1,30 @@
 (function () {
-    const second = 1000,
-          minute = second * 60,
-          hour = minute * 60,
-          day = hour * 24;
-  
-    //I'm adding this section so I don't have to keep updating this pen every year :-)
-    //remove this if you don't need it
-    let today = new Date(),
-        dd = String(today.getDate()).padStart(2, "0"),
-        mm = String(today.getMonth() + 1).padStart(2, "0"),
-        yyyy = today.getFullYear(),
-        nextYear = yyyy + 1,
-        dayMonth = "11/03/",
-        birthday = dayMonth + yyyy;
-    
-    today = mm + "/" + dd + "/" + yyyy;
-    if (today > birthday) {
-      birthday = dayMonth + nextYear;
+  const second = 1000,
+    minute = second * 60,
+    hour = minute * 60,
+    day = hour * 24;
+
+  // Specify the date and time for the event (e.g., birthday)
+  const eventDate = new Date("2023-11-03T13:00:00"); // Use ISO 8601 format (YYYY-MM-DDTHH:MM:SS)
+
+  const x = setInterval(function () {
+    const now = new Date().getTime(),
+      distance = eventDate - now;
+
+    if (distance < 0) {
+      document.getElementById("headline").innerText = "The event has started!";
+      document.getElementById("countdown").style.display = "none";
+    } else {
+      document.getElementById("days").innerText = Math.floor(distance / day);
+      document.getElementById("hours").innerText = Math.floor(
+        (distance % day) / hour
+      );
+      document.getElementById("minutes").innerText = Math.floor(
+        (distance % hour) / minute
+      );
+      document.getElementById("seconds").innerText = Math.floor(
+        (distance % minute) / second
+      );
     }
-    //end
-    
-    const countDown = new Date(birthday).getTime(),
-        x = setInterval(function() {    
-  
-          const now = new Date().getTime(),
-                distance = countDown - now;
-  
-          document.getElementById("days").innerText = Math.floor(distance / (day)),
-            document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-            document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-            document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-  
-          //do something later when date is reached
-          if (distance < 0) {
-            document.getElementById("headline").innerText = "It's my birthday!";
-            document.getElementById("countdown").style.display = "none";
-            document.getElementById("content").style.display = "block";
-            clearInterval(x);
-          }
-          //seconds
-        }, 0)
-    }());
+  }, 1000); // Update every 1 second
+})();

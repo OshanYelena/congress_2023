@@ -1962,9 +1962,9 @@ ul {
 .date-time-inner ul {
   margin: 0;
   padding: 0;
-  display: flex !important;
-  justify-content: center !important; 
-  text-align: center !important;
+  display: flex;
+  justify-content: center;
+  text-align: center;
   margin-right: 12px;
   margin-left: -12px;
 }
@@ -1979,14 +1979,7 @@ ul {
   margin-right: -5px;
   position: relative;
 }
-.date-time-inner ul li:after {
-  content: "";
-  position: absolute;
-  top: 0;
-  height: 100%;
-  width: 100%;
-  left: 0;
-}
+
 .date-time-inner ul li .number {
   font-size: 90px;
   font-family:  "Bebas Neue", cursive;
@@ -3197,12 +3190,13 @@ ul {
 }
 
 .image-container {
-  text-align: center;
+  text-align: center; /* Center-align text */
   display: flex;
-  flex-direction: column; 
-  align-items: center; 
-  justify-content: center;
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center-align items horizontally */
+  justify-content: center; /* Center-align items vertically */
 }
+
 
 
 
